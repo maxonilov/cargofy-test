@@ -13,5 +13,5 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::get('routes', 'RouteController@all');
-Route::post('route/create', 'RouteController@create');
+Route::get('routes', 'RouteController@all')->name('routes');
+Route::post('route/create', 'RouteController@create')->name('createRoute');
